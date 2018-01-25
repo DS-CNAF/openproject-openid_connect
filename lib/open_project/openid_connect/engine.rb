@@ -42,7 +42,8 @@ module OpenProject::OpenIDConnect
 
       Providers.configure custom_options: [
         :display_name?, :icon?, :sso?, :issuer?,
-        :check_session_iframe?, :end_session_endpoint?
+        :check_session_iframe?, :end_session_endpoint?,
+        :prompt?
       ]
 
       strategy :openid_connect do
